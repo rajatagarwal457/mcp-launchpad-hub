@@ -67,34 +67,7 @@ export const VisionSection = () => {
           </Card>
         </div>
 
-        {/* Inspiration section */}
-        <div className="text-center">
-          <p className="text-primary-foreground/60 mb-6">
-            Inspired by the success of platforms like
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 mb-12">
-            <div className="flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 rounded-full border border-primary-foreground/20">
-              <span className="text-primary-foreground font-medium">mcpmarket.com</span>
-              <ArrowUpRight className="w-4 h-4 text-primary-foreground/70" />
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 rounded-full border border-primary-foreground/20">
-              <span className="text-primary-foreground font-medium">mcpappstore.com</span>
-              <ArrowUpRight className="w-4 h-4 text-primary-foreground/70" />
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 rounded-full border border-primary-foreground/20">
-              <span className="text-primary-foreground font-medium">Best-in-class deployment platforms</span>
-              <ArrowUpRight className="w-4 h-4 text-primary-foreground/70" />
-            </div>
-          </div>
-
-          <Button 
-            variant="outline" 
-            size="xl" 
-            className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 border-none shadow-glow"
-          >
-            Join Our Mission
-          </Button>
-        </div>
+        
       </div>
     </section>
   );

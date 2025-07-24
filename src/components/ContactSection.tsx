@@ -29,42 +29,8 @@ export const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Newsletter signup */}
-          <Card className="p-8 bg-gradient-card backdrop-blur-sm border-primary/10">
-            <div className="mb-6">
-              <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mb-4">
-                <Bell className="w-8 h-8 text-primary-foreground" />
-              </div>
-              <h3 className="text-2xl font-bold mb-2 text-foreground">
-                Get Early Access
-              </h3>
-              <p className="text-muted-foreground">
-                Be among the first to experience the future of MCP deployment
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <div className="flex gap-2">
-                <Input
-                  type="email"
-                  placeholder="Enter your email address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 bg-background/50 border-primary/20 focus:border-primary"
-                />
-                <Button variant="gradient" className="px-6">
-                  <Mail className="w-4 h-4" />
-                  Subscribe
-                </Button>
-              </div>
-              
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <div className="w-2 h-2 bg-green-500 rounded-full" />
-                <span>Join 1,200+ developers waiting for launch</span>
-              </div>
-            </div>
-          </Card>
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
+          
 
           {/* Social & Community */}
           <div className="space-y-8">
@@ -78,7 +44,7 @@ export const ContactSection = () => {
                   <Twitter className="w-5 h-5 text-blue-500" />
                   <div className="text-left ml-3">
                     <div className="text-sm font-medium">Twitter/X</div>
-                    <div className="text-xs text-muted-foreground">@mcpmarketplace</div>
+                    <div className="text-xs text-muted-foreground">@rajat18agarwal</div>
                   </div>
                 </Button>
                 
@@ -86,25 +52,10 @@ export const ContactSection = () => {
                   <Linkedin className="w-5 h-5 text-blue-600" />
                   <div className="text-left ml-3">
                     <div className="text-sm font-medium">LinkedIn</div>
-                    <div className="text-xs text-muted-foreground">Company</div>
+                    <div className="text-xs text-muted-foreground">rajat18agarwal</div>
                   </div>
                 </Button>
                 
-                <Button variant="outline" className="justify-start h-14 bg-card/50 border-primary/20 hover:bg-card hover:border-primary/40">
-                  <Github className="w-5 h-5 text-gray-700 dark:text-gray-300" />
-                  <div className="text-left ml-3">
-                    <div className="text-sm font-medium">GitHub</div>
-                    <div className="text-xs text-muted-foreground">Open Source</div>
-                  </div>
-                </Button>
-                
-                <Button variant="outline" className="justify-start h-14 bg-card/50 border-primary/20 hover:bg-card hover:border-primary/40">
-                  <Users className="w-5 h-5 text-purple-600" />
-                  <div className="text-left ml-3">
-                    <div className="text-sm font-medium">Discord</div>
-                    <div className="text-xs text-muted-foreground">Community</div>
-                  </div>
-                </Button>
               </div>
             </div>
 

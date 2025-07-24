@@ -7,6 +7,14 @@ import heroBackground from "@/assets/hero-background.jpg";
 export const HeroSection = () => {
   const [email, setEmail] = useState("");
 
+  // Handler for smooth scroll to FeaturesSection
+  const handleLearnMoreClick = () => {
+    const featuresSection = document.getElementById("features-section");
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
@@ -47,29 +55,15 @@ export const HeroSection = () => {
           Get your own live URL instantly.
         </p>
 
-        {/* CTA Section */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <div className="flex w-full sm:w-auto max-w-md">
-            <Input
-              type="email"
-              placeholder="Enter your email for early access"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 h-12 bg-card/50 backdrop-blur-sm border-primary/20 text-foreground placeholder:text-muted-foreground focus:border-primary"
-            />
-            <Button variant="hero" size="lg" className="ml-2 h-12">
-              <Bell className="w-4 h-4" />
-              Notify Me
-            </Button>
-          </div>
-        </div>
+        
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button variant="glow" size="xl" className="group">
-            Request Early Access
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          <Button variant="outline" size="xl" className="bg-card/20 backdrop-blur-sm border-primary/20 hover:bg-card/30">
+          <Button
+            variant="outline"
+            size="xl"
+            className="bg-card/20 backdrop-blur-sm border-primary/20 hover:bg-card/30"
+            onClick={handleLearnMoreClick}
+          >
             Learn More
           </Button>
         </div>
@@ -85,8 +79,8 @@ export const HeroSection = () => {
             <div className="text-sm text-muted-foreground">Average Deploy Time</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">100%</div>
-            <div className="text-sm text-muted-foreground">Zero Infrastructure</div>
+            <div className="text-3xl font-bold text-primary mb-2">0</div>
+            <div className="text-sm text-muted-foreground">Infrastructure To Manage</div>
           </div>
         </div>
       </div>
