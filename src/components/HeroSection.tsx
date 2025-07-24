@@ -39,8 +39,6 @@ export const HeroSection = () => {
           The World's First
           <br />
           <span className="text-primary">MCP Marketplace</span>
-          <br />
-          & Instant Deploy Hub
         </h1>
 
         {/* Subtitle */}
