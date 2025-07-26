@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowRight, Bell, Sparkles } from "lucide-react";
 import { useState } from "react";
-import heroBackground from "@/assets/hero-background.jpg";
 
 export const HeroSection = () => {
   const [email, setEmail] = useState("");
@@ -19,11 +18,7 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBackground} 
-          alt="MCP Marketplace Hero" 
-          className="w-full h-full object-cover"
-        />
+        
         <div className="absolute inset-0 bg-gradient-hero opacity-90" />
       </div>
       
